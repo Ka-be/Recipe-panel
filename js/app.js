@@ -1,8 +1,8 @@
 // QUANTITY DISPLAY
 
 let ingredientsQuantities = document.getElementsByClassName('quantity');
-
-let quantitiesArray = [].slice.call(ingredientsQuantities); // Create an array from HTML collection
+const initialQuantities = [].slice.call(ingredientsQuantities); // Create an array from HTML collection
+let calculatedQuantities = initialQuantities;
 
 // SET GUEST COUNTER
 
@@ -15,9 +15,11 @@ increment = () => {
 		console.log(guestCounter);
 		displayedGuestNumber.innerText = guestCounter;
 
-		// quantitiesArray.forEach(element => {
-		// 	element.innerText = (element.innerText * guestCounter);
-		// });
+// ADD initial quantity to quantity calculated (Not multiply)
+
+		calculatedQuantities.forEach(element => {
+			element.innerText = (element.innerText + // initial quantity);
+		});
 	}
 }
 

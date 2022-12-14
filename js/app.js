@@ -15,9 +15,9 @@ increment = () => {
 		console.log(guestCounter);
 		displayedGuestNumber.innerText = guestCounter;
 
-		quantitiesArray.forEach(element => {
-			element.innerText = (element.innerText * guestCounter);
-		});
+		// quantitiesArray.forEach(element => {
+		// 	element.innerText = (element.innerText * guestCounter);
+		// });
 	}
 }
 
@@ -27,9 +27,9 @@ decrement = () => {
 		console.log(guestCounter);
 		displayedGuestNumber.innerText = guestCounter;
 
-		quantitiesArray.forEach(element => {
-			element.innerText = (element.innerText * guestCounter);
-		});
+		// quantitiesArray.forEach(element => {
+		// 	element.innerText = (element.innerText * guestCounter);
+		// });
 	} 
 }
 

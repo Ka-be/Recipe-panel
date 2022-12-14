@@ -20,4 +20,76 @@ a:visited {
 }
 a:active {
   color: inherit;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  background: red;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+aside .thumb,
+aside .guests,
+aside .ingredients {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside .thumb {
+  flex: 2;
+  background: yellow;
+}
+aside .thumb > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+aside .guests {
+  flex: 1;
+  background: pink;
+}
+aside .ingredients {
+  flex: 5;
+  background: blue;
+}
+
+main {
+  background: green;
+  height: 100%;
+  width: 100%;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .title, main .recipe {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .title {
+  background: grey;
+  flex: 1;
+}
+main .recipe {
+  background: black;
+  flex: 6;
 }/*# sourceMappingURL=style.css.map */

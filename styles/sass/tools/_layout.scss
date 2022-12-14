@@ -1,0 +1,68 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+	@include flex-center;
+}
+
+aside {
+	background: red;
+	height: 100%;
+	width: 100%;
+	flex: 1;
+
+	@include flex-column-evenly;
+
+	.thumb,
+	.guests,
+	.ingredients {
+		width: 90%;
+    @include flex-center;
+	}
+
+	.thumb {
+		flex: 2;
+		background: yellow;
+
+    >img{
+      object-fit: contain;
+      width: 100%;
+    }
+	}
+
+	.guests {
+		flex: 1;
+		background: pink;
+	}
+
+	.ingredients {
+		flex: 5;
+		background: blue;
+	}
+}
+
+main {
+	background: green;
+	height: 100%;
+	width: 100%;
+	flex: 3;
+
+  @include flex-column-between;
+
+  .title, .recipe{
+    width: 95%;
+    @include flex-center;
+  }
+
+  .title{
+    background: grey;
+    flex: 1;
+  }
+
+  .recipe{
+    background: black;
+    flex: 6;
+  }
+}

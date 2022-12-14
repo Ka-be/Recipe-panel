@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:active {
+  color: inherit;
+}/*# sourceMappingURL=style.css.map */

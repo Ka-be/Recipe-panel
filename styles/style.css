@@ -22,7 +22,8 @@ a:active {
   color: inherit;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -34,7 +35,6 @@ body {
 }
 
 aside {
-  background: red;
   height: 100%;
   width: 100%;
   flex: 1;
@@ -44,16 +44,14 @@ aside {
   justify-content: space-evenly;
 }
 aside .thumb,
-aside .guests,
-aside .ingredients {
+aside .guests {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 aside .thumb {
   flex: 2;
-  background: yellow;
 }
 aside .thumb > img {
   -o-object-fit: contain;
@@ -62,11 +60,48 @@ aside .thumb > img {
 }
 aside .guests {
   flex: 1;
-  background: pink;
+  background: #c3cdd6;
+  padding-left: 5px;
+}
+aside .guests .guests--counter {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+aside .guests #guests--counter-number {
+  width: 50%;
+  height: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 aside .ingredients {
   flex: 5;
-  background: blue;
+  width: 90%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+aside .ingredients h3 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 3em;
+  background-color: #E74C3C;
+}
+aside .ingredients .ingredients--table {
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+}
+aside .ingredients table {
+  width: 100%;
+  font-size: 35px;
 }
 
 main {
@@ -79,7 +114,8 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-main .title, main .recipe {
+main .title,
+main .recipe {
   width: 95%;
   display: flex;
   align-items: center;
@@ -92,4 +128,39 @@ main .title {
 main .recipe {
   background: black;
   flex: 6;
+  overflow: auto;
+}
+
+.thumb img {
+  border-radius: 10px;
+}
+
+.guests, #guests--counter-number {
+  border-radius: 10px;
+}
+
+#guests--counter-number {
+  font-size: 40px;
+}
+
+.btn {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  border: none;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredients--table tr {
+  height: 2em;
+}
+.ingredients--table tr:nth-child(even) {
+  background: #c3cdd6;
+}
+
+.quantity {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

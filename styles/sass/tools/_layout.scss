@@ -1,14 +1,16 @@
-html, body{
-  height: 100%;
-  width: 100%;
+html,
+body {
+	height: 100%;
+	width: 100%;
 }
 
 body {
 	@include flex-center;
 }
 
+//ASIDE PART
+
 aside {
-	background: red;
 	height: 100%;
 	width: 100%;
 	flex: 1;
@@ -16,32 +18,76 @@ aside {
 	@include flex-column-evenly;
 
 	.thumb,
-	.guests,
-	.ingredients {
+	.guests {
 		width: 90%;
-    @include flex-center;
+		@include flex-center-evenly;
 	}
 
 	.thumb {
 		flex: 2;
-		background: yellow;
 
-    >img{
-      object-fit: contain;
-      width: 100%;
-    }
+		> img {
+			object-fit: contain;
+			width: 100%;
+		}
 	}
 
 	.guests {
 		flex: 1;
-		background: pink;
+		background: $main-background;
+		padding-left: 5px;
+
+		.guests--counter {
+			width: 100%;
+			height: 90%;
+
+			@include flex-center-evenly;
+		}
+
+		#guests--counter-number {
+			width: 50%;
+			height: 50%;
+			background: white;
+
+			@include flex-center;
+		}
 	}
 
 	.ingredients {
 		flex: 5;
-		background: blue;
+		width: 90%;
+		overflow: auto;
+
+		@include flex-column-evenly;
+
+		h3{
+			width: 100%;
+			height: auto;
+			text-align: center;
+			font-size: 3em;
+			background-color: $main;
+		}
+
+		.ingredients--table{
+			height: 90%;
+			width: 100%;
+			overflow: auto;
+		}
+
+		table{
+			width: 100%;
+			font-size: 35px;
+		}
 	}
 }
+
+
+
+// table tr{
+// 	overflow: auto;
+// }
+
+//MAIN PART
 
 main {
 	background: green;
@@ -49,20 +95,22 @@ main {
 	width: 100%;
 	flex: 3;
 
-  @include flex-column-between;
+	@include flex-column-between;
 
-  .title, .recipe{
-    width: 95%;
-    @include flex-center;
-  }
+	.title,
+	.recipe {
+		width: 95%;
+		@include flex-center;
+	}
 
-  .title{
-    background: grey;
-    flex: 1;
-  }
+	.title {
+		background: grey;
+		flex: 1;
+	}
 
-  .recipe{
-    background: black;
-    flex: 6;
-  }
+	.recipe {
+		background: black;
+		flex: 6;
+		overflow: auto;
+	}
 }

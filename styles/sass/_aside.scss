@@ -15,6 +15,12 @@ aside{
 
 .guests{
 	background: $panel-background;
+
+	h3{
+		color: $text-dark;
+		margin-left: 10px;
+		font-size: 1.5em;
+	}
 }
 
 #guests--counter-number {

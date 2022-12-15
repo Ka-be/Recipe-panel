@@ -63,7 +63,7 @@ aside .guests {
   margin-top: 10px;
 }
 aside .guests .guests--counter {
-  width: 100%;
+  width: 80%;
   height: 90%;
   display: flex;
   align-items: center;
@@ -148,6 +148,11 @@ aside {
 
 .guests {
   background: #efefef;
+}
+.guests h3 {
+  color: #34495E;
+  margin-left: 10px;
+  font-size: 1.5em;
 }
 
 #guests--counter-number {

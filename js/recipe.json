@@ -1,0 +1,158 @@
+{
+  "title" : "Lasagnes de la banlieue d'Albi",
+  "ingredients" : [
+    {
+      "name" : "Boeuf haché",
+      "quantity" : 600,
+      "unit" : "g"
+    },
+    {
+      "name" : "Beurre",
+      "quantity" : 100,
+      "unit" : "g"
+    },
+    {
+      "name" : "Farine",
+      "quantity" : 100,
+      "unit" : "g"
+    },
+    {
+      "name" : "Lait",
+      "quantity" : 1,
+      "unit" : "L"
+    },
+    {
+      "name" : "Lasagnes",
+      "quantity" : 1,
+      "unit" : "paquet"
+    },
+    {
+      "name" : "Oignons",
+      "quantity" : 3,
+      "unit" : ""
+    },
+    {
+      "name" : "Gousse d'ail",
+      "quantity" : 2,
+      "unit" : ""
+    },
+    {
+      "name" : "Celeri",
+      "quantity" : 1,
+      "unit" : "branche"
+    },
+    {
+      "name" : "Purée de tomates",
+      "quantity" : 800,
+      "unit" : "g"
+    },
+    {
+      "name" : "Carottes",
+      "quantity" : 1,
+      "unit" : ""
+    },
+    {
+      "name" : "Eau",
+      "quantity" : 15,
+      "unit" : "cl"
+    },
+    {
+      "name" : "Vin rouge",
+      "quantity" : 20,
+      "unit" : "cl"
+    },
+    {
+      "name" : "Feuille de laurier",
+      "quantity" : 2,
+      "unit" : ""
+    },
+    {
+      "name" : "Thym",
+      "quantity" : "",
+      "unit" : ""
+    },
+    {
+      "name" : "Basilic",
+      "quantity" : "",
+      "unit" : ""
+    },
+    {
+      "name" : "Muscade rapée",
+      "quantity" : "",
+      "unit" : ""
+    },
+    {
+      "name" : "Gruyere rapé",
+      "quantity" : 70,
+      "unit" : "g"
+    },
+    {
+      "name" : "Parmesan rapé",
+      "quantity" : 125,
+      "unit" : "g"
+    },
+    {
+      "name" : "Sauce tomate",
+      "quantity" : 20,
+      "unit" : "g"
+    }
+  ],
+  "steps" : [
+    {
+      "number" : 1,
+      "step" : "Faire revenir gousses hachées d'ail et les oignons émincés dans un peu d'huile d'olive."
+    },
+    {
+      "number" : 2,
+      "step" : "Ajouter la carotte et la branche de céleri hachée puis la viande et faire revenir le tout."
+    },
+    {
+      "number" : 3,
+      "step" : "Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu'à évaporation."
+    },
+    {
+      "number" : 4,
+      "step" : "Ajouter la purée de tomates, l'eau et les herbes. Saler, poivrer, puis laisser mijoter à feu doux 45 minutes."
+    },
+    {
+      "number" : 5,
+      "step" : "Préparer la béchamel : faire fondre le beurre."
+    },
+    {
+      "number" : 6,
+      "step" : "Hors du feu, ajouter la farine d'un coup."
+    },
+    {
+      "number" : 7,
+      "step" : "Remettre sur le feu et remuer avec un fouet jusqu'à l'obtention d'un mélange bien lisse."
+    },
+    {
+      "number" : 8,
+      "step" : "Ajouter le lait peu à peu."
+    },
+    {
+      "number" : 9,
+      "step" : "Remuer sans cesse, jusqu'à ce que le mélange s'épaississe."
+    },
+    {
+      "number" : 10,
+      "step" : "Ensuite, parfumer avec la muscade, saler, poivrer. Laisser cuire environ 5 minutes, à feu très doux, en remuant. Réserver."
+    },
+    {
+      "number" : 11,
+      "step" : "Préchauffer le four à 200°C (thermostat 6-7). Huiler le plat à lasagnes. Poser une fine couche de béchamel puis des feuilles de lasagnes, de la bolognaise, de la béchamel et du parmesan. Répéter l'opération 3 fois de suite."
+    },
+    {
+      "number" : 12,
+      "step" : "Sur la dernière couche de lasagnes, ne mettre que de la béchamel et recouvrir de fromage râpé. Parsemer quelques noisettes de beurre."
+    },
+    {
+      "number" : 13,
+      "step" : "Enfourner pour environ 25 minutes de cuisson."
+    },
+    {
+      "number" : 14,
+      "step" : "Déguster"
+    }
+  ]
+}

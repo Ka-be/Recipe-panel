@@ -135,7 +135,8 @@ main .recipe {
   border-radius: 10px;
 }
 
-.guests, #guests--counter-number {
+.guests,
+#guests--counter-number {
   border-radius: 10px;
 }
 

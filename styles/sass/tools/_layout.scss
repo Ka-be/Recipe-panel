@@ -104,7 +104,7 @@ main {
 		@include flex-column-evenly;
 
 		h2{
-			width: 50%;
+			width: 95%;
 			height: 3em;
 			margin: 10px 0 10px 0;
 			@include flex-center;
@@ -115,6 +115,13 @@ main {
 			width: 98%;
 			padding-top: 10px;
 			overflow: auto;
+		}
+
+		.step-list li{
+			height: auto;
+			padding: 40px 0 40px 0;
+
+			@include flex-start-center;
 		}
 	}
 }

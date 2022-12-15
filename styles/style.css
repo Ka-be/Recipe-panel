@@ -132,7 +132,7 @@ main .recipe {
   justify-content: space-evenly;
 }
 main .recipe h2 {
-  width: 50%;
+  width: 95%;
   height: 3em;
   margin: 10px 0 10px 0;
   display: flex;
@@ -144,6 +144,12 @@ main .recipe .steps {
   width: 98%;
   padding-top: 10px;
   overflow: auto;
+}
+main .recipe .step-list li {
+  height: auto;
+  padding: 40px 0 40px 0;
+  display: flex;
+  align-items: center;
 }
 
 body {
@@ -177,13 +183,31 @@ main {
 }
 
 .step-list {
-  font-size: 4em;
+  font-size: 3.5em;
+  overflow-wrap: break-word;
 }
 .step-list li {
   background: white;
+  color: #34495E;
+  border-radius: 20px;
+  font-weight: 100;
 }
 .step-list li:nth-child(even) {
   background: #efefef;
+}
+.step-list li::before {
+  content: "12";
+  min-height: 70px;
+  min-width: 70px;
+  background: #34495E;
+  margin-right: 20px;
+  border-radius: 20px;
+  font-size: 0.7em;
+  color: #ffffff;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 aside {
@@ -227,7 +251,7 @@ aside {
 }
 
 .ingredients h3 {
-  background: #F25E6B;
+  background: #34495E;
   color: #ffffff;
 }
 

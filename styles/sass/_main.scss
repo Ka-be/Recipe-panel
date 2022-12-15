@@ -1,39 +1,58 @@
-main{
-  background: $panel-background;
+main {
+	background: $panel-background;
 }
 
-.title{
-  background: $main;
-  border-radius: 20px;
+.title {
+	background: $main;
+	border-radius: 20px;
 
-  h1{
-    color: $text-light;
-    text-transform: uppercase;
-    font-size: 3em;
-    letter-spacing: 5px;
-  }
+	h1 {
+		color: $text-light;
+		text-transform: uppercase;
+		font-size: 3em;
+		letter-spacing: 5px;
+	}
 }
 
-.recipe{
-  background: white;
-  border-radius: 20px;
+.recipe {
+	background: white;
+	border-radius: 20px;
 
-  h2{
-    border-radius: 10px;
-    background: $text-dark;
-    color: $text-light;
-    font-size: 2em;
-  }
+	h2 {
+		border-radius: 10px;
+		background: $text-dark;
+		color: $text-light;
+		font-size: 2em;
+	}
 }
 
-.step-list{
-  font-size: 4em;
+.step-list {
+	font-size: 3.5em;
+  overflow-wrap:break-word;
 
-  li{
-    background: white;
+	li {
+		background: white;
+    color: $text-dark;
+    border-radius: 20px;
+    font-weight: 100;
+    
 
-    &:nth-child(even) {
-      background: $panel-background;
+		&:nth-child(even) {
+			background: $panel-background;
+		}
+
+    &::before{
+      content:"12";
+      min-height: 70px;
+      min-width: 70px;
+      background: $text-dark;
+      margin-right: 20px;
+      border-radius: 20px;
+      font-size: .7em;
+      color: $text-light;
+      font-weight: 400;
+
+      @include flex-center;
     }
-  }
+	}
 }

@@ -1,11 +1,24 @@
+// IMPORT RECIPE DATA
+
 import recipe from './recipe.json' assert {type : 'json'};
-console.log(recipe);
+console.log(recipe.ingredients[0].quantity);
 
 // QUANTITY DISPLAY
 
 let ingredientsQuantities = document.getElementsByClassName("quantity");
 const initialQuantities = [].slice.call(ingredientsQuantities); // Create an array from HTML collection
 let calculatedQuantities = Array.from(initialQuantities);
+
+
+
+
+
+
+
+
+
+
+
 
 // SET GUEST COUNTER
 
@@ -24,7 +37,7 @@ increment = () => {
 			element.innerText = parseFloat(element.innerText) + parseFloat(initialQuantities[index].innerText);
 		})
 	}
-};
+}
 
 decrement = () => {
 	if (guestCounter > 1) {

@@ -1,23 +1,30 @@
 // IMPORT RECIPE DATA
-
 import recipe from './recipe.json' assert {type : 'json'};
 console.log(recipe.ingredients[0].quantity);
+
+
+//DISPLAY RECIPE TITLE - OK
+const recipeTitle = document.querySelector('.title h1');
+recipeTitle.innerText = recipe.title;
+
+// DISPLAY INGREDIENTS - OK
+const table = document.querySelector('table');
+
+recipe.ingredients.forEach(element => {
+	let newRow = table.insertRow();
+	newRow.insertCell().innerText = element.name;
+	newRow.insertCell().innerText = element.quantity;
+	newRow.insertCell().innerText = element.unit;
+});
+
+
+
 
 // QUANTITY DISPLAY
 
 let ingredientsQuantities = document.getElementsByClassName("quantity");
 const initialQuantities = [].slice.call(ingredientsQuantities); // Create an array from HTML collection
 let calculatedQuantities = Array.from(initialQuantities);
-
-
-
-
-
-
-
-
-
-
 
 
 // SET GUEST COUNTER

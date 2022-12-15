@@ -131,6 +131,10 @@ main .recipe {
   overflow: auto;
 }
 
+.test {
+  background: red;
+}
+
 .thumb img {
   border-radius: 10px;
 }

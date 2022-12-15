@@ -14,9 +14,8 @@ recipe.ingredients.forEach(element => {
 	const newIngredient = newRow.insertCell();
 	newIngredient.innerText = element.name;
 
-	let newQty = newRow.insertCell();
+	const newQty = newRow.insertCell();
 	newQty.innerText = element.quantity;
-	newQty.classList.add('quantity');
 
 	const newUnit = newRow.insertCell();
 	newUnit.innerText = element.unit;

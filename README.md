@@ -26,7 +26,7 @@ A dynamic panel to display personnal cooking recipes.
 
 ![Responsive](https://img.shields.io/badge/Responsive-None-E74C3C?style=flat-square)
 
-- Dynamic display of ingredients quantities accordinf the guests number
+- Dynamic display of ingredients quantities according the guests number
 
 ---
 

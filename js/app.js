@@ -1,66 +1,65 @@
 // IMPORT RECIPE DATA
-import recipe from './recipe.json' assert {type : 'json'};
-console.log(recipe.ingredients[0].quantity);
-
+import recipe from "./recipe.json" assert { type: "json" };
 
 //DISPLAY RECIPE TITLE - OK
-const recipeTitle = document.querySelector('.title h1');
+const recipeTitle = document.querySelector(".title h1");
 recipeTitle.innerText = recipe.title;
 
 // DISPLAY INGREDIENTS - OK
-const table = document.querySelector('table');
+const table = document.querySelector("table");
 
 recipe.ingredients.forEach(element => {
-	let newRow = table.insertRow();
-	newRow.insertCell().innerText = element.name;
-	newRow.insertCell().innerText = element.quantity;
-	newRow.insertCell().innerText = element.unit;
+	const newRow = table.insertRow();
+
+	const newIngredient = newRow.insertCell();
+	newIngredient.innerText = element.name;
+
+	let newQty = newRow.insertCell();
+	newQty.innerText = element.quantity;
+	newQty.classList.add('quantity');
+
+	const newUnit = newRow.insertCell();
+	newUnit.innerText = element.unit;
 });
 
 
+let displayedQuantities = document.getElementsByClassName('quantity');
 
-
-// QUANTITY DISPLAY
-
-let ingredientsQuantities = document.getElementsByClassName("quantity");
-const initialQuantities = [].slice.call(ingredientsQuantities); // Create an array from HTML collection
-let calculatedQuantities = Array.from(initialQuantities);
-
-
-// SET GUEST COUNTER
-
+// SET GUEST COUNTER - OK
 let guestCounter = 1; // 1 by default
-let displayedGuestNumber = document.getElementById("guests--counter-number");
+const displayedGuestNumber = document.getElementById("guests--counter-number");
+const btnPlus = document.getElementById('plus');
+const btnMinus = document.getElementById('minus');
 
-increment = () => {
+btnPlus.addEventListener('click', increment);
+btnMinus.addEventListener('click', decrement);
+
+
+//--------FUNCTIONS-------- OK
+
+function increment(){
 	if (guestCounter < 12) {
 		//Max guests : 12
 		guestCounter++;
-		console.log(guestCounter);
 		displayedGuestNumber.innerText = guestCounter;
 
-		// ADD initial quantity to quantity calculated (Not multiply)
-		calculatedQuantities.forEach((element, index) => {
-			element.innerText = parseFloat(element.innerText) + parseFloat(initialQuantities[index].innerText);
-		})
-	}
-}
-
-decrement = () => {
-	if (guestCounter > 1) {
-		// Min guests = 1
-		guestCounter--;
-		console.log(guestCounter);
-		displayedGuestNumber.innerText = guestCounter;
-
-		// quantitiesArray.forEach(element => {
-		// 	element.innerText = (element.innerText * guestCounter);
-		// });
+		// Increment quantities
+		for (let i=0; i < displayedQuantities.length; i++){
+			displayedQuantities[i].innerText = ((displayedQuantities[i].innerText * 1) + recipe.ingredients[i].quantity);
+		}
 	}
 };
 
-// Prbolem at decrement
+function decrement(){
+	if (guestCounter > 1) {
+		// Min guests = 1
+		guestCounter--;
+		displayedGuestNumber.innerText = guestCounter;
 
-// quantitiesArray.forEach(element => { // Not worked
-// 	element.innerText = element.innerText * guestCounter;
-// })
+		// Decrement quantities
+		for (let i=0; i < displayedQuantities.length; i++){
+			displayedQuantities[i].innerText = ((displayedQuantities[i].innerText * 1) - recipe.ingredients[i].quantity);
+		}
+	}
+};
+

@@ -1,0 +1,39 @@
+main{
+  background: $panel-background;
+}
+
+.title{
+  background: $main;
+  border-radius: 20px;
+
+  h1{
+    color: $text-light;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 5px;
+  }
+}
+
+.recipe{
+  background: white;
+  border-radius: 20px;
+
+  h2{
+    border-radius: 10px;
+    background: $text-dark;
+    color: $text-light;
+    font-size: 2em;
+  }
+}
+
+.step-list{
+  font-size: 4em;
+
+  li{
+    background: white;
+
+    &:nth-child(even) {
+      background: $panel-background;
+    }
+  }
+}

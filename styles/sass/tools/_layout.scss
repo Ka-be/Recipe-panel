@@ -80,13 +80,6 @@ aside {
 		}
 	}
 }
-
-
-
-// table tr{
-// 	overflow: auto;
-// }
-
 //MAIN PART
 
 main {
@@ -96,18 +89,32 @@ main {
 
 	@include flex-column-between;
 
-	.title,
-	.recipe {
-		width: 95%;
-		@include flex-center;
-	}
-
 	.title {
 		flex: 1;
+		width: 95%;
+		margin: 10px;
+		// align-self: flex-start; -- Active For close button
+		@include flex-center;
 	}
 
 	.recipe {
 		flex: 6;
 		overflow: auto;
+		width: 95%;
+		@include flex-column-evenly;
+
+		h2{
+			width: 50%;
+			height: 3em;
+			margin: 10px 0 10px 0;
+			@include flex-center;
+		}
+
+		.steps{
+			flex: 1;
+			width: 98%;
+			padding-top: 10px;
+			overflow: auto;
+		}
 	}
 }

@@ -114,23 +114,76 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-main .title,
-main .recipe {
+main .title {
+  flex: 1;
   width: 95%;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .title {
-  flex: 1;
-}
 main .recipe {
   flex: 6;
+  overflow: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .recipe h2 {
+  width: 50%;
+  height: 3em;
+  margin: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .recipe .steps {
+  flex: 1;
+  width: 98%;
+  padding-top: 10px;
   overflow: auto;
 }
 
 body {
   background: #cfcfcf;
+}
+
+main {
+  background: #efefef;
+}
+
+.title {
+  background: #F25E6B;
+  border-radius: 20px;
+}
+.title h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+
+.recipe {
+  background: white;
+  border-radius: 20px;
+}
+.recipe h2 {
+  border-radius: 10px;
+  background: #34495E;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.step-list {
+  font-size: 4em;
+}
+.step-list li {
+  background: white;
+}
+.step-list li:nth-child(even) {
+  background: #efefef;
 }
 
 aside {

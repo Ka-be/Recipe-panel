@@ -34,8 +34,7 @@ aside {
 
 	.guests {
 		flex: 1;
-		background: $main-background;
-		padding-left: 5px;
+		margin-top: 10px;
 
 		.guests--counter {
 			width: 100%;
@@ -47,7 +46,6 @@ aside {
 		#guests--counter-number {
 			width: 50%;
 			height: 50%;
-			background: white;
 
 			@include flex-center;
 		}
@@ -62,10 +60,12 @@ aside {
 
 		h3{
 			width: 100%;
-			height: auto;
-			text-align: center;
-			font-size: 3em;
-			background-color: $main;
+			height: 2em;
+			font-size: 2em;
+			border-radius: 10px;
+			margin: 10px 0 10px 0;
+
+			@include flex-center;
 		}
 
 		.ingredients--table{
@@ -90,7 +90,6 @@ aside {
 //MAIN PART
 
 main {
-	background: green;
 	height: 100%;
 	width: 100%;
 	flex: 3;
@@ -104,12 +103,10 @@ main {
 	}
 
 	.title {
-		background: grey;
 		flex: 1;
 	}
 
 	.recipe {
-		background: black;
 		flex: 6;
 		overflow: auto;
 	}

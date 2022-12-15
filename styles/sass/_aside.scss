@@ -1,5 +1,9 @@
 //ASIDE
 
+aside{
+	background: white;
+}
+
 .thumb img {
 	border-radius: 10px;
 }
@@ -9,8 +13,14 @@
 	border-radius: 10px;
 }
 
+.guests{
+	background: $panel-background;
+}
+
 #guests--counter-number {
 	font-size: 40px;
+	background: white;
+	color: $text-dark;
 }
 
 .btn {
@@ -19,8 +29,16 @@
 	border-radius: 40px;
 	border: none;
 	font-size: 50px;
+	background: white;
 
 	@include flex-center;
+}
+
+.ingredients{
+	h3{
+		background: $main;
+		color: $text-light;
+	}
 }
 
 .ingredients--table tr {
@@ -28,12 +46,13 @@
 	color: $text-dark;
 
 	&:nth-child(even) {
-		background: $main-background;
+		background: $panel-background;
 	}
 }
 
 .ingredient {
 	color: $text-dark;
+	font-weight: 100;
 }
 
 .quantity {

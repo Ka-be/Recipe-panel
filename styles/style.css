@@ -60,8 +60,7 @@ aside .thumb > img {
 }
 aside .guests {
   flex: 1;
-  background: #c3cdd6;
-  padding-left: 5px;
+  margin-top: 10px;
 }
 aside .guests .guests--counter {
   width: 100%;
@@ -73,7 +72,6 @@ aside .guests .guests--counter {
 aside .guests #guests--counter-number {
   width: 50%;
   height: 50%;
-  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,10 +87,13 @@ aside .ingredients {
 }
 aside .ingredients h3 {
   width: 100%;
-  height: auto;
-  text-align: center;
-  font-size: 3em;
-  background-color: #E74C3C;
+  height: 2em;
+  font-size: 2em;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 aside .ingredients .ingredients--table {
   height: 90%;
@@ -105,7 +106,6 @@ aside .ingredients table {
 }
 
 main {
-  background: green;
   height: 100%;
   width: 100%;
   flex: 3;
@@ -122,13 +122,19 @@ main .recipe {
   justify-content: center;
 }
 main .title {
-  background: grey;
   flex: 1;
 }
 main .recipe {
-  background: black;
   flex: 6;
   overflow: auto;
+}
+
+body {
+  background: #cfcfcf;
+}
+
+aside {
+  background: white;
 }
 
 .thumb img {
@@ -140,8 +146,14 @@ main .recipe {
   border-radius: 10px;
 }
 
+.guests {
+  background: #efefef;
+}
+
 #guests--counter-number {
   font-size: 40px;
+  background: white;
+  color: #34495E;
 }
 
 .btn {
@@ -150,9 +162,15 @@ main .recipe {
   border-radius: 40px;
   border: none;
   font-size: 50px;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ingredients h3 {
+  background: #F25E6B;
+  color: #ffffff;
 }
 
 .ingredients--table tr {
@@ -160,11 +178,12 @@ main .recipe {
   color: #34495E;
 }
 .ingredients--table tr:nth-child(even) {
-  background: #c3cdd6;
+  background: #efefef;
 }
 
 .ingredient {
   color: #34495E;
+  font-weight: 100;
 }
 
 .quantity {

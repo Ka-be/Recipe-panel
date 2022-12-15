@@ -16,6 +16,7 @@ recipe.ingredients.forEach(element => {
 
 	const newQty = newRow.insertCell();
 	newQty.innerText = element.quantity;
+	newQty.classList.add('quantity');
 
 	const newUnit = newRow.insertCell();
 	newUnit.innerText = element.unit;
@@ -42,9 +43,11 @@ function increment(){
 		guestCounter++;
 		displayedGuestNumber.innerText = guestCounter;
 
-		// Increment quantities
+		// Increment quantities (Only if quantity is specified - avoid a NaN)
 		for (let i=0; i < displayedQuantities.length; i++){
-			displayedQuantities[i].innerText = ((displayedQuantities[i].innerText * 1) + recipe.ingredients[i].quantity);
+			if(recipe.ingredients[i].quantity != ""){
+				displayedQuantities[i].innerText = ((displayedQuantities[i].innerText * 1) + recipe.ingredients[i].quantity);
+			}
 		}
 	}
 };
@@ -55,9 +58,11 @@ function decrement(){
 		guestCounter--;
 		displayedGuestNumber.innerText = guestCounter;
 
-		// Decrement quantities
+		// Decrement quantities (Only if quantity is specified - avoid a NaN)
 		for (let i=0; i < displayedQuantities.length; i++){
-			displayedQuantities[i].innerText = ((displayedQuantities[i].innerText * 1) - recipe.ingredients[i].quantity);
+			if(recipe.ingredients[i].quantity != ""){
+				displayedQuantities[i].innerText = ((displayedQuantities[i].innerText * 1) - recipe.ingredients[i].quantity);
+			}
 		}
 	}
 };

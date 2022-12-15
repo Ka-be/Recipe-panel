@@ -28,31 +28,30 @@ main {
 
 .step-list {
 	font-size: 3.5em;
-  overflow-wrap:break-word;
+	overflow-wrap: break-word;
 
 	li {
 		background: white;
-    color: $text-dark;
-    border-radius: 20px;
-    font-weight: 100;
-    
+		color: $text-dark;
+		border-radius: 20px;
+		font-weight: 100;
 
 		&:nth-child(even) {
 			background: $panel-background;
 		}
 
-    &::before{
-      content:"12";
-      min-height: 70px;
-      min-width: 70px;
-      background: $text-dark;
-      margin-right: 20px;
-      border-radius: 20px;
-      font-size: .7em;
-      color: $text-light;
-      font-weight: 400;
+		&::before {
+			content: counter(li);
+			min-height: 70px;
+			min-width: 70px;
+			background: $text-dark;
+			margin-right: 20px;
+			border-radius: 20px;
+			font-size: 0.7em;
+			color: $text-light;
+			font-weight: 400;
 
-      @include flex-center;
-    }
+			@include flex-center;
+		}
 	}
 }

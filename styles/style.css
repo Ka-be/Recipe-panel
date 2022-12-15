@@ -196,7 +196,7 @@ main {
   background: #efefef;
 }
 .step-list li::before {
-  content: "12";
+  content: counter(li);
   min-height: 70px;
   min-width: 70px;
   background: #34495E;

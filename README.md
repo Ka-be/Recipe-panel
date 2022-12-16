@@ -4,7 +4,7 @@
 
 <!-- ![Status](https://img.shields.io/badge/Status-Finished-20bf6b?style=flat-square) -->
 
-A dynamic panel to display personnal cooking recipes.
+A cooking recipe panel for a home automation project.<br>This app imports cooking recipe data from a json file to display it on a home automation screen.
 
 ---
 
@@ -19,6 +19,9 @@ A dynamic panel to display personnal cooking recipes.
 **Server:**
 ![None](https://img.shields.io/badge/NONE-778899?)
 
+### In future
+![Node](https://img.shields.io/badge/Node.js-339933?&logo=nodedotjs&logoColor=white)
+
 
 ---
 
@@ -27,6 +30,12 @@ A dynamic panel to display personnal cooking recipes.
 ![Responsive](https://img.shields.io/badge/Responsive-None-E74C3C?style=flat-square)
 
 - Dynamic display of ingredients quantities according the guests number
+- Scroll through the ingredients list and cooking steps
+
+### Next features
+- Recipe storage on server
+- Add a recipe selection panel
+- Add a recipe creation panel
 
 ---
 
@@ -39,26 +48,26 @@ A dynamic panel to display personnal cooking recipes.
 
 ## 📲 Deployment
 
-![None](https://img.shields.io/badge/NONE-778899?)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?&logo=netlify&logoColor=white)
 
 ---
 
 ## 🎨 Color Reference
 
-<!-- | Color      | Hex                                                                |
+| Color      | Hex                                                                |
 | ---------- | ------------------------------------------------------------------ |
-| Turquoise  | ![#1ABC9C](https://placehold.co/15x15/1ABC9C/1ABC9C.png) `#1ABC9C` |
-| Dark grey  | ![#19242e](https://placehold.co/15x15/19242e/19242e.png) `#19242e` |
-| Light grey | ![#34495E](https://placehold.co/15x15/34495E/34495E.png) `#34495E` |
-| Silver     | ![#BDC3C7](https://placehold.co/15x15/BDC3C7/BDC3C7.png) `#BDC3C7` | -->
-To be updated
+| Light grey  | ![#efefef](https://placehold.co/15x15/efefef/efefef.png) `#EFEFEF` |
+| Grey  | ![#cfcfcf](https://placehold.co/15x15/cfcfcf/cfcfcf.png) `#CFCFCF` |
+| Fusion red | ![#f25e6b](https://placehold.co/15x15/f25e6b/f25e6b.png) `#F25E6B` |
+| Blue grey     | ![#34495e](https://placehold.co/15x15/34495e/34495e.png) `#34495E` |
+
 ---
 
-<!-- ## 📸 Screenshots
+## 📸 Screenshots
 
-<img src="images/Screenshot.png" width=50%>
+<img src="img/Screenshots/screenshot.png" width=80%>
 
---- -->
+---
 
 ## 🔗 Links
 

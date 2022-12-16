@@ -1,5 +1,5 @@
 {
-  "title" : "Lasagnes de la banlieue d'Albi",
+  "title" : "Lasagnes de boeuf",
   "ingredients" : [
     {
       "name" : "Boeuf haché",
@@ -24,7 +24,7 @@
     {
       "name" : "Lasagnes",
       "quantity" : 1,
-      "unit" : "paquet"
+      "unit" : "Paq."
     },
     {
       "name" : "Oignons",
@@ -39,7 +39,7 @@
     {
       "name" : "Celeri",
       "quantity" : 1,
-      "unit" : "branche"
+      "unit" : "Branches"
     },
     {
       "name" : "Purée de tomates",
@@ -54,12 +54,12 @@
     {
       "name" : "Eau",
       "quantity" : 15,
-      "unit" : "cl"
+      "unit" : "cL"
     },
     {
       "name" : "Vin rouge",
       "quantity" : 20,
-      "unit" : "cl"
+      "unit" : "cL"
     },
     {
       "name" : "Feuille de laurier",

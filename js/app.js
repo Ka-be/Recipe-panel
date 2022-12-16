@@ -37,7 +37,7 @@ btnPlus.addEventListener('click', increment);
 btnMinus.addEventListener('click', decrement);
 
 
-//--------FUNCTIONS-------- OK
+//--------FUNCTIONS INCREMENT & DECREMENT-------- OK
 
 function increment(){
 	if (guestCounter < 12) {

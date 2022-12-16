@@ -29,19 +29,21 @@ main {
 .step-list {
 	font-size: 3.5em;
 	overflow-wrap: break-word;
+	counter-reset: step-counter;
 
 	li {
 		background: white;
 		color: $text-dark;
 		border-radius: 20px;
 		font-weight: 100;
+		counter-increment: step-counter;
 
 		&:nth-child(even) {
 			background: $panel-background;
 		}
 
 		&::before {
-			content: counter(li);
+			content: counter(step-counter);
 			min-height: 70px;
 			min-width: 70px;
 			background: $text-dark;

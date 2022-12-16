@@ -185,18 +185,20 @@ main {
 .step-list {
   font-size: 3.5em;
   overflow-wrap: break-word;
+  counter-reset: step-counter;
 }
 .step-list li {
   background: white;
   color: #34495E;
   border-radius: 20px;
   font-weight: 100;
+  counter-increment: step-counter;
 }
 .step-list li:nth-child(even) {
   background: #efefef;
 }
 .step-list li::before {
-  content: counter(li);
+  content: counter(step-counter);
   min-height: 70px;
   min-width: 70px;
   background: #34495E;

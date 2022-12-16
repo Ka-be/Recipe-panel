@@ -2,7 +2,6 @@
 fetch("/js/recipe.json")
 	.then((response) => response.json())
 	.then((recipe) => {
-		console.log(recipe);
 
 		//DISPLAY RECIPE TITLE
 		const recipeTitle = document.querySelector(".title h1");

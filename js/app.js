@@ -1,7 +1,4 @@
-// // IMPORT RECIPE DATA
-// import recipe from "./recipe.json" assert { type: "json" };
-
-// FETCH API APPROACH
+// FETCH API to GET RECIPE DATA
 fetch("/js/recipe.json")
 	.then((response) => response.json())
 	.then((recipe) => {

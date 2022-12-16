@@ -24,7 +24,8 @@ aside {
 	}
 
 	.thumb {
-		flex: 2;
+		max-width: 90%;
+		padding-top: 10px;
 
 		> img {
 			object-fit: contain;
@@ -33,7 +34,8 @@ aside {
 	}
 
 	.guests {
-		flex: 1;
+		height: auto;
+		padding: 1em;
 		margin-top: 10px;
 
 		.guests--counter {
@@ -45,7 +47,7 @@ aside {
 
 		#guests--counter-number {
 			width: 50%;
-			height: 50%;
+			height: 90%;
 
 			@include flex-center;
 		}
@@ -93,6 +95,7 @@ main {
 		flex: 1;
 		width: 95%;
 		margin: 10px;
+		text-align: center;
 		// align-self: flex-start; -- Active For close button
 		@include flex-center;
 	}

@@ -51,7 +51,8 @@ aside .guests {
   justify-content: space-evenly;
 }
 aside .thumb {
-  flex: 2;
+  max-width: 90%;
+  padding-top: 10px;
 }
 aside .thumb > img {
   -o-object-fit: contain;
@@ -59,7 +60,8 @@ aside .thumb > img {
   width: 100%;
 }
 aside .guests {
-  flex: 1;
+  height: auto;
+  padding: 1em;
   margin-top: 10px;
 }
 aside .guests .guests--counter {
@@ -71,7 +73,7 @@ aside .guests .guests--counter {
 }
 aside .guests #guests--counter-number {
   width: 50%;
-  height: 50%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,6 +120,7 @@ main .title {
   flex: 1;
   width: 95%;
   margin: 10px;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;

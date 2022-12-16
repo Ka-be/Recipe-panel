@@ -16,7 +16,6 @@ A cooking recipe panel for a home automation project.<br>This app imports cookin
 ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?&logo=javascript&logoColor=black)
 ![Json](https://img.shields.io/badge/json-5E5C5C?&logo=json&logoColor=white)
 
-https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white
 
 
 **Server:**

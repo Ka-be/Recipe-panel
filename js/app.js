@@ -1,11 +1,11 @@
 // IMPORT RECIPE DATA
 import recipe from "./recipe.json" assert { type: "json" };
 
-//DISPLAY RECIPE TITLE - OK
+//DISPLAY RECIPE TITLE
 const recipeTitle = document.querySelector(".title h1");
 recipeTitle.innerText = recipe.title;
 
-// DISPLAY INGREDIENTS - OK
+// DISPLAY INGREDIENTS
 const table = document.querySelector("table");
 
 recipe.ingredients.forEach(element => {
@@ -24,10 +24,14 @@ recipe.ingredients.forEach(element => {
 	newUnit.classList.add('unit')
 });
 
+// DISPLAY STEPS
+const stepList = document.querySelector('.step-list');
+recipe.steps.forEach(element => {
+	let newStep = stepList.appendChild(document.createElement('li'));
+	newStep.textContent = element.step;
+})
 
-let displayedQuantities = document.getElementsByClassName('quantity');
-
-// SET GUEST COUNTER - OK
+// SET GUEST COUNTER
 let guestCounter = 1; // 1 by default
 const displayedGuestNumber = document.getElementById("guests--counter-number");
 const btnPlus = document.getElementById('plus');
@@ -37,7 +41,8 @@ btnPlus.addEventListener('click', increment);
 btnMinus.addEventListener('click', decrement);
 
 
-//--------FUNCTIONS INCREMENT & DECREMENT-------- OK
+//--------FUNCTIONS INCREMENT & DECREMENT-------- 
+let displayedQuantities = document.getElementsByClassName('quantity');
 
 function increment(){
 	if (guestCounter < 12) {

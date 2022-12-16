@@ -19,7 +19,8 @@ header {
 		border-radius: 0 20px 20px 0;
 		border: none;
 		outline: none;
-		background: $text-dark;
+		background: hsla(355, 85%, 66%, 0.484);
+		cursor: pointer;
 
 		>img{
 			object-fit: contain;

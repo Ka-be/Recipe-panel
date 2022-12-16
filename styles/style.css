@@ -191,7 +191,8 @@ header .close {
   border-radius: 0 20px 20px 0;
   border: none;
   outline: none;
-  background: #34495e;
+  background: hsla(355deg, 85%, 66%, 0.484);
+  cursor: pointer;
 }
 header .close > img {
   -o-object-fit: contain;
@@ -275,6 +276,7 @@ aside {
   font-size: 50px;
   background: white;
   outline: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -37,6 +37,7 @@ aside {
 	font-size: 50px;
 	background: white;
 	outline: none;
+	cursor: pointer;
 
 	@include flex-center;
 

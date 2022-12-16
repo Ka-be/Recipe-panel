@@ -91,7 +91,7 @@ main {
 
 	@include flex-column-between;
 
-	header{
+	header {
 		flex: 1;
 		width: 95%;
 		margin: 10px;
@@ -105,10 +105,10 @@ main {
 			@include flex-center;
 		}
 
-		.close{
+		.close {
 			height: 100%;
 			width: 5%;
-			@include flex-center
+			@include flex-center;
 		}
 	}
 

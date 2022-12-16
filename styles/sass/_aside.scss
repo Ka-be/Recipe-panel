@@ -36,8 +36,13 @@ aside{
 	border: none;
 	font-size: 50px;
 	background: white;
+	outline: none;
 
 	@include flex-center;
+
+	img{
+		width: 70%;
+	}
 }
 
 .ingredients{

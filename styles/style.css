@@ -250,9 +250,13 @@ aside {
   border: none;
   font-size: 50px;
   background: white;
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.btn img {
+  width: 70%;
 }
 
 .ingredients h3 {

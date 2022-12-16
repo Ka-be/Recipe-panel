@@ -1,30 +1,30 @@
-@mixin flex-center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@mixin flex-start-center{
-  display: flex;
-  align-items: center;
+@mixin flex-start-center {
+	display: flex;
+	align-items: center;
 }
 
-@mixin flex-center-evenly{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+@mixin flex-center-evenly {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-@mixin flex-column-evenly{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+@mixin flex-column-evenly {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-@mixin flex-column-between{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+@mixin flex-column-between {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }

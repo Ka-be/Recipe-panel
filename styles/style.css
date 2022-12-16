@@ -116,11 +116,25 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-main .title {
+main header {
   flex: 1;
   width: 95%;
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main header .title {
+  width: 95%;
+  height: 100%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main header .close {
+  height: 100%;
+  width: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,15 +177,25 @@ main {
   background: #efefef;
 }
 
-.title {
-  background: #F25E6B;
-  border-radius: 20px;
+header .title {
+  background: #f25e6b;
+  border-radius: 20px 0 0 20px;
 }
-.title h1 {
+header .title h1 {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 5px;
+}
+header .close {
+  border-radius: 0 20px 20px 0;
+  border: none;
+  outline: none;
+  background: #34495e;
+}
+header .close > img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .recipe {
@@ -180,7 +204,7 @@ main {
 }
 .recipe h2 {
   border-radius: 10px;
-  background: #34495E;
+  background: #34495e;
   color: #ffffff;
   font-size: 2em;
 }
@@ -192,7 +216,7 @@ main {
 }
 .step-list li {
   background: white;
-  color: #34495E;
+  color: #34495e;
   border-radius: 20px;
   font-weight: 100;
   counter-increment: step-counter;
@@ -204,8 +228,8 @@ main {
   content: counter(step-counter);
   min-height: 70px;
   min-width: 70px;
-  background: #34495E;
-  margin-right: 20px;
+  background: #34495e;
+  margin: 0 20px 0 20px;
   border-radius: 20px;
   font-size: 0.7em;
   color: #ffffff;
@@ -232,7 +256,7 @@ aside {
   background: #efefef;
 }
 .guests h3 {
-  color: #34495E;
+  color: #34495e;
   margin-left: 10px;
   font-size: 1.5em;
 }
@@ -240,7 +264,7 @@ aside {
 #guests--counter-number {
   font-size: 40px;
   background: white;
-  color: #34495E;
+  color: #34495e;
 }
 
 .btn {
@@ -260,20 +284,20 @@ aside {
 }
 
 .ingredients h3 {
-  background: #34495E;
+  background: #34495e;
   color: #ffffff;
 }
 
 .ingredients--table tr {
   height: 2em;
-  color: #34495E;
+  color: #34495e;
 }
 .ingredients--table tr:nth-child(even) {
   background: #efefef;
 }
 
 .ingredient {
-  color: #34495E;
+  color: #34495e;
   font-weight: 100;
 }
 

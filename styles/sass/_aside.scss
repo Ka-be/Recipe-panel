@@ -1,6 +1,6 @@
 //ASIDE
 
-aside{
+aside {
 	background: white;
 }
 
@@ -13,10 +13,10 @@ aside{
 	border-radius: 10px;
 }
 
-.guests{
+.guests {
 	background: $panel-background;
 
-	h3{
+	h3 {
 		color: $text-dark;
 		margin-left: 10px;
 		font-size: 1.5em;
@@ -40,13 +40,13 @@ aside{
 
 	@include flex-center;
 
-	img{
+	img {
 		width: 70%;
 	}
 }
 
-.ingredients{
-	h3{
+.ingredients {
+	h3 {
 		background: $text-dark;
 		color: $text-light;
 	}

@@ -60,7 +60,7 @@ aside {
 
 		@include flex-column-evenly;
 
-		h3{
+		h3 {
 			width: 100%;
 			height: 2em;
 			font-size: 2em;
@@ -70,13 +70,13 @@ aside {
 			@include flex-center;
 		}
 
-		.ingredients--table{
+		.ingredients--table {
 			height: 90%;
 			width: 100%;
 			overflow: auto;
 		}
 
-		table{
+		table {
 			width: 100%;
 			font-size: 30px;
 		}
@@ -91,13 +91,25 @@ main {
 
 	@include flex-column-between;
 
-	.title {
+	header{
 		flex: 1;
 		width: 95%;
 		margin: 10px;
-		text-align: center;
-		// align-self: flex-start; -- Active For close button
+
 		@include flex-center;
+
+		.title {
+			width: 95%;
+			height: 100%;
+			text-align: center;
+			@include flex-center;
+		}
+
+		.close{
+			height: 100%;
+			width: 5%;
+			@include flex-center
+		}
 	}
 
 	.recipe {
@@ -106,21 +118,21 @@ main {
 		width: 95%;
 		@include flex-column-evenly;
 
-		h2{
+		h2 {
 			width: 95%;
 			height: 3em;
 			margin: 10px 0 10px 0;
 			@include flex-center;
 		}
 
-		.steps{
+		.steps {
 			flex: 1;
 			width: 98%;
 			padding-top: 10px;
 			overflow: auto;
 		}
 
-		.step-list li{
+		.step-list li {
 			height: auto;
 			padding: 40px 0 40px 0;
 
